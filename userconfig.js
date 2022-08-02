@@ -33,7 +33,7 @@ const CONFIG = new Config({
       name: 'Study!',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
-        name: 'fun',
+        name: 'Study',
         links: [
           {
             url: 'https://www.reddit.com/r/archlinux',
