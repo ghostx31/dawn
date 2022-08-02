@@ -32,8 +32,8 @@
 }
 
 :root {
-    --accent: crimson;
-    --bg: #0f0f12;
+    --accent: #b4befe;
+    --bg: #1e1e2e;
 }
 
 body {
@@ -62,7 +62,8 @@ todo-list::after {
     left: 0;
     width: 1px;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    /* background: rgba(255, 255, 255, .1); */
+    background: #181825;
     z-index: 4;
 }
 

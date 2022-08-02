@@ -6,7 +6,7 @@ const CONFIG = new Config({
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'New Delhi, India',
     scale: 'C'
   },
   clock: {
@@ -26,82 +26,70 @@ const CONFIG = new Config({
     "t": 'todo-list',
     "s": 'search-bar'
   },
-  disabled: [],
+  disabled: ['crypto-rate'],
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
+      name: 'Study!',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
         name: 'fun',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            url: 'https://www.reddit.com/r/archlinux',
+            name: 'r/archlinux'
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
-            icon_color: '#64876d'
-          },
-          {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
+            name: 'Golang docs',
+            url: 'https://go.dev/doc/',
             icon: 'book'
           },
           {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
+            name: 'r/devops',
+            url: 'https://www.reddit.com/r/devops'
           },
           {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
+            name: 'r/golang',
+            url: 'https://www.reddit.com/r/golang',
+          },
+          {
+            name: 'r/developersIndia',
+            url: 'https://www.reddit.com/r/developersIndia',
+          },
+          {
+            name: 'Github',
+            url: 'https://github.com',
+            icon: 'brand-github'
+
           }
         ]
       },
       {
-        name: 'Comfy',
+        name: 'Wasting time!',
         links: [
           {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
+            name: 'r/linuxmemes',
+            url: 'https://www.reddit.com/r/linuxmemes'
           },
           {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
+            name: 'r/linuxmasterrace',
+            url: 'https://www.reddit.com/r/linuxmasterrace'
+          },
+          {
+            name: 'r/unixporn',
+            url: 'https://www.reddit.com/r/unixporn'
+          },
+          {
+            name: 'r/r4rindia',
+            url: 'https://www.reddit.com/r/r4rindia'
+          },
+          {
+            name: 'YouTube',
+            url: 'https://www.youtube.com',
+            icon: 'brand-youtube'
           }
         ]
       },
-      {
-        name: 'Technology',
-        links: [
-          {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
-          },
-          {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
-          },
-          {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
-          },
-          {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
-          },
-          {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
-            icon: 'code'
-          }
-        ]
-      }
       ]
     },
     {
@@ -144,66 +132,43 @@ const CONFIG = new Config({
       ]
     },
     {
-      name: 'tech',
+      name: 'coding',
       background_url: 'src/img/banners/bg-3.gif',
       categories: [
         {
           name: 'subreddits',
           links: [
             {
-              name: 'r/startpages/',
-              url: 'https://www.reddit.com/r/startpages/'
+              name: 'r/python',
+              url: 'https://www.reddit.com/r/Python/',
+              icon: 'brand-python'
             },
             {
-              name: 'r/unixporn',
-              url: 'https://www.reddit.com/r/unixporn/'
-            },
-            {
-              name: 'r/mechkbds/',
-              url: 'https://www.reddit.com/r/MechanicalKeyboards/',
-              icon: 'keyboard',
-              icon_color: '#a57685'
+              name: 'r/bash',
+              url: 'https://www.reddit.com/r/bash/',
+              icon: 'hash'
             },
             {
               name: 'r/programming',
-              url: 'https://www.reddit.com/r/programming/'
+              url: 'https://www.reddit.com/r/programming/',
+              icon: 'code'
             }
           ]
         },
         {
-          name: 'blogs',
+          name: 'docs',
           links: [
             {
-              name: 'fasterthanli',
-              url: 'https://fasterthanli.me/articles',
-              icon: 'anchor'
+              name: 'python',
+              url: 'https://docs.python.org/3/'
             },
             {
-              name: 'dev.to',
-              url: 'https://dev.to'
-            },
-            {
-              name: 'mataroa.blog',
-              url: 'https://collection.mataroa.blog',
-            }
-          ]
-        },
-        {
-          name: 'misc',
-          links: [
-            {
-              name: 'post office',
-              url: 'http://afternoon.dynu.com/letterbox.html',
-              icon: 'mailbox'
-            },
-            {
-              name: 'rust docs',
+              name: 'rust',
               url: 'https://doc.rust-lang.org/book/',
-              icon: 'notebook',
-              icon_color: '#977a3a'
-            }
+              icon: 'notebook'
+            },
           ]
-        }
+        },
       ]
     }]
 });

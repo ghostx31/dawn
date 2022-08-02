@@ -4,7 +4,7 @@ class Links extends Component {
   }
 
   static getIcon(link) {
-    const defaultColor = '#726f6f';
+    const defaultColor = '#7f849c';
 
     return link.icon
       ? `<i class="ti ti-${link.icon} link-icon"
@@ -80,7 +80,7 @@ class Tabs extends Component {
       status-bar {
           bottom: -70px;
           height: 32px;
-          background: #18181d;
+          background: #11111b;
           border-radius: 4px;
           box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
       }
@@ -92,7 +92,7 @@ class Tabs extends Component {
       }
 
       .nav {
-          color: #fff;
+          color: #cdd6f4;
       }
 
       #panels {
@@ -106,7 +106,7 @@ class Tabs extends Component {
           bottom: 0;
           margin: auto;
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-          background: #18181d;
+          background: #181825;
       }
 
       .categories {
@@ -135,11 +135,11 @@ class Tabs extends Component {
       }
 
       .categories ul:nth-child(2) {
-          --flavour: #16a2a2;
+          --flavour: #a6e3a1;
       }
 
       .categories ul:nth-child(3) {
-          --flavour: #5b52e4;
+          --flavour: #89b4fa;
       }
 
       .categories ul .links {
@@ -155,7 +155,7 @@ class Tabs extends Component {
           right: 0;
           width: 70%;
           height: 100%;
-          background: #18181d;
+          background: #181825;
           padding: 5%;
           flex-wrap: wrap;
       }
@@ -165,15 +165,15 @@ class Tabs extends Component {
       }
 
       .categories ul .links a {
-          color: #8a8b93;
+          color: #9399b2;
           text-decoration: none;
           font: 700 18px 'Roboto', sans-serif;
           transition: all .2s;
           display: inline-flex;
           align-items: center;
           padding: .4em .7em;
-          background: rgb(35 35 44);
-          box-shadow: 0 4px #1c1d24, 0 5px 10px rgb(0 0 0 / 50%);
+          background: rgb(49, 50, 68);
+          box-shadow: 0 4px #313244, 0 5px 10px rgb(0 0 0 / 50%);
           border-radius: 2px;
           margin-bottom: .7em;
       }
@@ -201,7 +201,7 @@ class Tabs extends Component {
           padding: 1em;
           margin: auto;
           border-radius: 5px;
-          box-shadow: inset 0 0 0 1px rgb(255 255 255 / 50%);
+          box-shadow: inset 0 0 0 1px rgb(205, 214, 244 / 50%);
           left: calc(15% - 42.5px);
           bottom: 0;
           top: 0;
@@ -224,7 +224,7 @@ class Tabs extends Component {
       }
 
       .categories .links li h1 {
-          color: #42424e;
+          color: #45475a;
           font-size: 13px;
           margin-bottom: 1em;
           font-weight: 600;
@@ -235,7 +235,7 @@ class Tabs extends Component {
 
       .categories .link-icon {
           font-size: 27px;
-          color: #726f6f;
+          color: #7f849c;
       }
 
       .categories .link-icon + .link-name {

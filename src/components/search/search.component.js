@@ -21,7 +21,7 @@ class Search extends Component {
           justify-content: center;
           width: calc(100% - 2px);
           height: 100%;
-          background: rgb(24 24 29 / 80%);
+          background: rgb(24 24 37 / 80%);
           z-index: 99;
           visibility: hidden;
           top: -100%;
@@ -43,12 +43,12 @@ class Search extends Component {
           border: 0;
           outline: 0;
           width: 100%;
-          box-shadow: inset 0 -2px #737373;
+          box-shadow: inset 0 -2px #6c7086;
           padding: .5em 0;
           background: none;
           font: 500 22px 'Roboto', sans-serif;
           letter-spacing: 1px;
-          color: #fff;
+          color: #b4befe;
       }
 
       #search input:focus {
@@ -64,7 +64,7 @@ class Search extends Component {
           background: 0;
           border: 0;
           outline: 0;
-          color: #fff;
+          color: #b4befe;
           position: absolute;
           right: 0;
           cursor: pointer;

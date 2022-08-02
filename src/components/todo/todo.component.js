@@ -216,12 +216,12 @@ class Todo extends Component {
   style() {
     return `
       :host {
-          --done: #37eb94;
-          --todo: #ff1b91;
-          --bg: #0f0f12;
+          --done: #a6e3a1;
+          --todo: #eba0ac;
+          --bg: #11111b;
           --task-options-reveal-time: .15s;
-          --task-options-done-background: #357d5a;
-          --task-options-todo-background: #84355e;
+          --task-options-done-background: #a6e3a1;
+          --task-options-todo-background: #cba6f7;
       }
 
       button {
@@ -237,7 +237,7 @@ class Todo extends Component {
       .header-title {
           font-weight: 100;
           font-size: 24pt;
-          color: rgba(255, 255, 255, .1);
+          color: #cdd6f4;
           text-align: center;
           width: 100%;
       }
@@ -249,14 +249,14 @@ class Todo extends Component {
           width: 100%;
           padding: 8px;
           border-radius: 10px;
-          box-shadow: inset 0 0 0 2px #18181d;
+          box-shadow: inset 0 0 0 2px #181825;
       }
 
       .counter {
           grid-column: 3;
-          color: rgba(255, 255, 255, .1);
+          color: #cdd6f4;
           font-size: 14px;
-          background: #18181d;
+          background: #181825;
           border-radius: 5px;
       }
 
@@ -264,17 +264,17 @@ class Todo extends Component {
           cursor: pointer;
           height: 25px;
           min-width: 30px;
-          background: #18181d;
+          background: #181825;
           border-radius: 5px;
-          box-shadow: 0 0 0 1px #27272a, 0 5px 5px rgb(0 0 0 / 20%);
+          box-shadow: 0 0 0 1px #45475a, 0 5px 5px rgb(0 0 0 / 20%);
       }
 
       .clean-tasks {
           grid-column: 5;
           opacity: .5;
           cursor: unset;
-          background: #81395e;
-          box-shadow: 0 0 0 1px #c975a0, 0 5px 5px rgb(0 0 0 / 20%);
+          background: #f38ba8;
+          box-shadow: 0 0 0 1px #eba0ac, 0 5px 5px rgb(0 0 0 / 20%);
       }
 
       .clean-tasks.active {
@@ -321,12 +321,12 @@ class Todo extends Component {
 
       .todo-count:hover,
       .done-count:hover {
-          background: #212127;
+          background: #313244;
       }
 
       .todo-count.active {
           background: var(--todo);
-          color: #6d244a;
+          color: #f38ba8;
       }
 
       .done-count.active {
@@ -371,9 +371,9 @@ class Todo extends Component {
           width: 100%;
           min-height: 70px;
           box-shadow: 0 1px 0 0 rgba(0, 0, 0, .5),
-                      0 4px 0 0 #18181d,
+                      0 4px 0 0 #181825,
                       0 5px 0 rgba(0, 0, 0, .5),
-                      0 8px 0 0 #18181d;
+                      0 8px 0 0 #181825;
           transition: opacity .5s cubic-bezier(0.4, 0, 1, 1),
                       margin .5s cubic-bezier(0.4, 0, 1, 1),
                       box-shadow .2s,
@@ -426,13 +426,13 @@ class Todo extends Component {
       }
 
       .add-task-button {
-          background: #2e2e38;
+          background: #45475a;
           padding: .5em 1em;
           border-radius: 5px;
           color: #8c8ca0;
           margin-top: 1em;
           margin-left: auto;
-          box-shadow: inset 0 0 0 1px #3e3e4a;
+          box-shadow: inset 0 0 0 1px #6c7086;
           cursor: pointer;
           font-weight: bold;
           font-family: 'Roboto', sans-serif;
@@ -491,7 +491,7 @@ class Todo extends Component {
           flex-wrap: wrap;
           width: calc(100% - 1px);
           top: -335px;
-          background: #18181d;
+          background: #181825;
           transition: top .5s;
           padding: 0 1.5em 1em;
           z-index: 9;
@@ -519,7 +519,7 @@ class Todo extends Component {
 
       .add-todo-panel input:focus,
       .edit-task-panel input:focus {
-          box-shadow: inset 0 0 0 2px #3e3e4a;
+          box-shadow: inset 0 0 0 2px #6c7086;
       }
 
       .task-list {
@@ -533,7 +533,7 @@ class Todo extends Component {
           margin-left: -30px;
           height: 100%;
           scrollbar-width: thin;
-          scrollbar-color: #313138 transparent;
+          scrollbar-color: #45475a transparent;
       }
 
       .task-list.dim {
@@ -546,7 +546,7 @@ class Todo extends Component {
       }
 
       .task-list::-webkit-scrollbar-thumb {
-          background: #313138;
+          background: #45475a;
           border-radius: 5px;
       }
 
@@ -562,7 +562,7 @@ class Todo extends Component {
           height: 100%;
           position: relative;
           padding: 1em 1em .5em;
-          background: #18181d;
+          background: #181825;
           transition: height var(--task-options-reveal-time) ease-in,
                       margin var(--task-options-reveal-time) ease-in,
                       box-shadow var(--task-options-reveal-time) ease-in;
@@ -591,7 +591,7 @@ class Todo extends Component {
           width: 100%;
           height: 100%;
           position: absolute;
-          background: #18181d;
+          background: #181825;
           z-index: 1;
           top: 100%;
           opacity: 0;
@@ -651,7 +651,7 @@ class Todo extends Component {
             color: #b5b5b5;
             letter-spacing: 1px;
             transition: top .1s;
-            background: #181818;
+            background: #181825;
             white-space: nowrap;
             bottom: 0;
             margin: auto 1.5em;
@@ -863,7 +863,7 @@ class Todo extends Component {
       .task-control {
           display: flex;
           justify-content: center;
-          color: #7f7f9a;
+          color: #7f849c;
           cursor: pointer;
       }
 
@@ -874,7 +874,7 @@ class Todo extends Component {
       }
 
       .task-footer {
-          border-top: 1px solid #292929;
+          border-top: 1px solid #313244;
           display: grid;
           grid-template-columns: [added-at] 100px auto [priority] 8px;
           align-items: center;
@@ -893,16 +893,16 @@ class Todo extends Component {
           width: 4px;
           height: 4px;
           border-radius: 50%;
-          background: #424242;
+          background: #45475a;
       }
 
       .tasks task[priority=none] .priority {
         display: none;
       }
 
-      .tasks task[priority=low] .priority    { background: #6fd468; }
-      .tasks task[priority=medium] .priority { background: #debc59; }
-      .tasks task[priority=high] .priority   { background: #d45959; }
+      .tasks task[priority=low] .priority    { background: #a6e3a1; }
+      .tasks task[priority=medium] .priority { background: #f9e2af; }
+      .tasks task[priority=high] .priority   { background: #f38ba8; }
 
       .task-toggle::after {
           content: '';
