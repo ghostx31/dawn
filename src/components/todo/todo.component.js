@@ -218,7 +218,7 @@ class Todo extends Component {
       :host {
           --done: #a6e3a1;
           --todo: #eba0ac;
-          --bg: #11111b;
+          --bg: #000000;
           --task-options-reveal-time: .15s;
           --task-options-done-background: #a6e3a1;
           --task-options-todo-background: #cba6f7;
@@ -249,14 +249,14 @@ class Todo extends Component {
           width: 100%;
           padding: 8px;
           border-radius: 10px;
-          box-shadow: inset 0 0 0 2px #181825;
+          box-shadow: inset 0 0 0 2px #010101;
       }
 
       .counter {
           grid-column: 3;
           color: #cdd6f4;
           font-size: 14px;
-          background: #181825;
+          background: #010101;
           border-radius: 5px;
       }
 
@@ -264,7 +264,7 @@ class Todo extends Component {
           cursor: pointer;
           height: 25px;
           min-width: 30px;
-          background: #181825;
+          background: #010101;
           border-radius: 5px;
           box-shadow: 0 0 0 1px #45475a, 0 5px 5px rgb(0 0 0 / 20%);
       }
@@ -371,9 +371,9 @@ class Todo extends Component {
           width: 100%;
           min-height: 70px;
           box-shadow: 0 1px 0 0 rgba(0, 0, 0, .5),
-                      0 4px 0 0 #181825,
+                      0 4px 0 0 #010101,
                       0 5px 0 rgba(0, 0, 0, .5),
-                      0 8px 0 0 #181825;
+                      0 8px 0 0 #010101;
           transition: opacity .5s cubic-bezier(0.4, 0, 1, 1),
                       margin .5s cubic-bezier(0.4, 0, 1, 1),
                       box-shadow .2s,
@@ -491,7 +491,7 @@ class Todo extends Component {
           flex-wrap: wrap;
           width: calc(100% - 1px);
           top: -335px;
-          background: #181825;
+          background: #010101;
           transition: top .5s;
           padding: 0 1.5em 1em;
           z-index: 9;
@@ -562,7 +562,7 @@ class Todo extends Component {
           height: 100%;
           position: relative;
           padding: 1em 1em .5em;
-          background: #181825;
+          background: #010101;
           transition: height var(--task-options-reveal-time) ease-in,
                       margin var(--task-options-reveal-time) ease-in,
                       box-shadow var(--task-options-reveal-time) ease-in;
@@ -591,7 +591,7 @@ class Todo extends Component {
           width: 100%;
           height: 100%;
           position: absolute;
-          background: #181825;
+          background: #010101;
           z-index: 1;
           top: 100%;
           opacity: 0;
@@ -651,7 +651,7 @@ class Todo extends Component {
             color: #b5b5b5;
             letter-spacing: 1px;
             transition: top .1s;
-            background: #181825;
+            background: #010101;
             white-space: nowrap;
             bottom: 0;
             margin: auto 1.5em;

@@ -80,7 +80,7 @@ class Tabs extends Component {
       status-bar {
           bottom: -70px;
           height: 32px;
-          background: #11111b;
+          background: #000000;
           border-radius: 4px;
           box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
       }
@@ -106,7 +106,7 @@ class Tabs extends Component {
           bottom: 0;
           margin: auto;
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-          background: #181825;
+          background: #010101;
       }
 
       .categories {
@@ -155,7 +155,7 @@ class Tabs extends Component {
           right: 0;
           width: 70%;
           height: 100%;
-          background: #181825;
+          background: #010101;
           padding: 5%;
           flex-wrap: wrap;
       }
