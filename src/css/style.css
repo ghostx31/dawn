@@ -33,7 +33,7 @@
 
 :root {
     --accent: #b4befe;
-    --bg: #020202;
+    --bg: #1e1e2e;
 }
 
 body {
@@ -63,7 +63,7 @@ todo-list::after {
     width: 1px;
     height: 100%;
     /* background: rgba(255, 255, 255, .1); */
-    background: #010101;
+    background: #181825;
     z-index: 4;
 }
 

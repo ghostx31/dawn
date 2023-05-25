@@ -59,7 +59,7 @@ class Modal extends Component {
           top: calc(-100% - ${this.height}px);
           bottom: 0;
           right: 0; left: 0;
-          background: #010101;
+          background: #181825;
           padding: 1em 1.5em;
           box-sizing: border-box;
           transition: top .5s cubic-bezier(0.06, -0.05, 0, 1);
